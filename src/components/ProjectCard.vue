@@ -40,6 +40,9 @@
                 <img src="" alt="" class="h-4 w-4">
                 <!-- github logo -->
                 <span>
+                    <img src="../assets/github.png" alt="" class="h-7 w-7">
+                  </span>
+                <span>
                     sarataman/next-nested-routing
                 </span>
                 </a>

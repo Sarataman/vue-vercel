@@ -3,11 +3,9 @@
     <div class="bg-white">
       <header class="space-y-2">
         <nav class="max-w-5xl mx-auto px-6 flex items-center justify-between">
-          <div>
-            <!-- Vercel logo -->
+          <div class="flex mt-4 items-center">
             <span>
-              <img src="../assets/vercel.png" alt="vercel logo"  class="mt-2 h-6 w-6">
-              <!-- <img src="../assets/vercel2.png" alt=""  class="h-6 w-6"> -->
+              <img src="../assets/vercel.png" alt="vercel logo"  class="float-left items-center h-14 w-14">
             </span>
             <span>
               <svg viewBox="0 0 32 32" stroke="currentColor" class="h-8 w-8 text-gray-300">
@@ -15,6 +13,9 @@
               </svg>
             </span>
             <AccountSwitcher/>
+            <span>
+              <!-- <img src="../assets/arrowhead.JPG" alt="" class="h-5 w-5"> -->
+            </span>
           </div>
           <div class="flex items-center space-x-5">
             <div class="flex items-center space-x-5">
@@ -45,14 +46,14 @@
           </div>
         </nav>
       </header>
-      <div class="max-w-5xl mx-auto px-6 pt-14 pb-28">
+      <div class="flex max-w-5xl mx-auto px-6 pt-14 pb-28">
         <div class="flex space-x-8">
           <div>
             <img class="h-24 w-24 rounded-full" src="../assets/profile.jpg" alt="profile picture">
           </div>
           <div class="flex flex-col justify-between space-y-4">
             <div class="flex items-center space-x-3">
-              <h1 class="text-4xl leading-10 font-bold">Sarah Ataman</h1>
+              <h1 class="text-3xl leading-10 font-bold">Sarah Ataman</h1>
               <span class="mt-1 inline-flex text-xs leading-5 font-medium rounded-full bg-gray-50 border border-gray-200 px-2 text-black uppercase tracking-wide">
                 Hobby
               </span>
@@ -62,18 +63,17 @@
                 <dt class="text-xs leading-5 font-medium text-gray-500 uppercase tracking-wide">Git Integration</dt>
                 <dd class="flex items-center space-x-2 text-sm leading-5 font-medium">
                   <span>
-                    <img src="" alt="" class="h-7 w-7">
+                    <img src="../assets/github.png" alt="" class="h-7 w-7">
                   </span>
-                  <!-- github logo -->
                   sarataman
                 </dd>
               </dl>
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 col-gap-6">
-          <a href="" class="inline-flex justify-center rounded border border-gray-200 bg-white px-6 py-2 text-sm leading-5 font-medium text-gray-500 hover:border-black hover:text-black transition ease-in-out duration-150">Invite Team</a>
-          <a href="" class="inline-flex justify-center rounded border border-gray-200 bg-black px-6 py-2 text-sm leading-5 font-medium text-white hover:border-black hover:text-black hover:bg-white transition ease-in-out duration-150">Import Projects</a>
+        <div class="grid grid-cols-2 col-gap-6 justify-end ml-10">
+          <a href="" class="rounded border flex justify-center border-gray-200 bg-white px-5 py-2 mx-4 h-12 text-sm leading-5 font-medium text-gray-500 hover:border-black hover:text-black transition ease-in-out duration-150">Invite Team</a>
+          <a href="" class="rounded border flex justify-center border-gray-200 bg-black px-5 py-2 mx-4 h-12 text-sm leading-5 font-medium text-white hover:border-black hover:text-black hover:bg-white transition ease-in-out duration-150">Import Projects</a>
         </div> 
       </div>
     </div>
@@ -91,6 +91,9 @@
                 <li>
                   <ProjectCard/>
                 </li>
+                <li>
+                  <ProjectCard/>
+                </li>
               </ul>
             </div>
             <div>
@@ -99,7 +102,7 @@
               </a>
             </div>
         </div>
-        <div class="space-y-12 col-span-5 pt-1">
+        <div class="ml-10 space-y-12 col-span-5 pt-1">
           <h2 class="text-sm leading-5 font-bold">
           Recent Activity
           </h2>
@@ -154,7 +157,11 @@ import ProjectCard from '@/components/ProjectCard'
 import ActivityFeedItem from '@/components/ActivityFeedItem'
 import AccountSwitcher from '@/components/AccountSwitcher'
 export default {
-  components: {ProjectCard}
+  components: {
+    ProjectCard,
+    ActivityFeedItem,
+    AccountSwitcher
+    }
 };
 </script>
 

@@ -12,7 +12,7 @@
         </button>
     </span>
     <!-- Transition -->
-    <div class="absolute w-56 rpunded-md divide-y divide-gray-200 overflow-hidden bg-white shadow-lg">
+    <!-- <div class="absolute w-56 rpunded-md divide-y divide-gray-200 overflow-hidden bg-white shadow-lg">
         <div class="py-2">
             <div class="pt-3 px-4 pb-2 text-xs leading-5 uppercase tracking-wide text-gray-200">
                 Personal Accounnt
@@ -21,12 +21,11 @@
                 <li class="px-4 py-3 bg-gray-50">
                     <div class="flex items-center justify-between space-x-4 text-gray-500 hover:text-black">
                         <div class="flex items-center space-x-4">
-                            <!-- Avatar -->
                             <span class="text-gray-500">Sarah Ataman</span>
                         </div>
                         <div>
                             <a href="#">
-                                <!-- Cogicon class h-5 w-5 text-gray-300  -->
+                                Cogicon class h-5 w-5 text-gray-300 
                             </a>
                         </div>
                     </div>
@@ -36,9 +35,9 @@
         <div class="py-2">
             <a href="" class="flex items-center text-sm text-gray-500 leading-5 hover:text-black"></a>
             <span>Create a Team</span>
-            <!-- plusicon h-4 w-4 -->
+            plusicon h-4 w-4
         </div>
-    </div>
+    </div>-->
 </div>
 </template>
 
